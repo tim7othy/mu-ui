@@ -42,8 +42,8 @@ body {
 	/* 非布局样式 */
     font-size: 14px;
     font-weight: normal;
-    border-top: 1px solid #eee;
     color: #aaa;
+    border-top: 1px solid #eee;
     background: #fff;
 }
 /* Panel 内容区 */
@@ -52,7 +52,6 @@ body {
     padding: .6rem 1rem;
     overflow: hidden;
     border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
     background: #fff;
 }
 .mu-panel {
@@ -60,7 +59,10 @@ body {
     overflow: hidden;
     /* 容器之间有一定间隔 */
     margin-bottom: .6rem;
+    /* 外部容器决定最终下边框 */
+    border-bottom: 1px solid #eee;
 }
+
 /* 可手动设置内容区是否有内边距 */
 .mu-panel .panel-body.no-padding{
     padding: 0;

@@ -1,0 +1,57 @@
+/* 按钮默认样式 */
+.mu-btn{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 10rem;
+    padding: .5rem 0;
+    margin: 0 auto;
+
+    font-size: .7rem;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    user-select:none;
+}
+
+/* 定制外观样式 */
+/* 定制主操作按钮样式 */
+.mu-btn.mu-btn-primary{
+    background-color: #1AAD19;
+    color: #fff;
+}
+
+/* 定制警示按钮样式 */
+.mu-btn.mu-btn-warning{
+    background-color: #E64340;
+    color: #fff;
+}
+
+/* 定制不可用按钮样式 */
+.mu-btn.mu-btn-disabled{
+    background-color: #F7F7F7;
+    color: #999;
+    opacity: .6;
+}
+/* 定制大小 */
+/* 大按钮 */
+.mu-btn.mu-btn-large{
+    width: 100%;
+    font-size: .9rem;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+/* 小按钮 */
+.mu-btn.mu-btn-small {
+    display: inline-block;
+    width: 3rem;
+    padding: .2rem .2rem;
+    font-size: .7rem;
+}
