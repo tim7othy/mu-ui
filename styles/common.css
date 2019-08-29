@@ -23,6 +23,7 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+/* 遮罩层 */
 .mu-mask {
     position: fixed;
     top: 0;
@@ -31,4 +32,36 @@ body {
     width: 100%;
     background: rgb(0, 0, 0, 0.5);
     z-index: 300;
+}
+
+/* Panel 标题 */
+.mu-panel > .panel-title{
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+	/* 非布局样式 */
+    font-size: 14px;
+    font-weight: normal;
+    border-top: 1px solid #eee;
+    color: #aaa;
+    background: #fff;
+}
+/* Panel 内容区 */
+.mu-panel .panel-body{
+    position: relative;
+    padding: .6rem 1rem;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.mu-panel {
+    /* 防止边距重叠 */
+    overflow: hidden;
+    /* 容器之间有一定间隔 */
+    margin-bottom: .6rem;
+}
+/* 可手动设置内容区是否有内边距 */
+.mu-panel .panel-body.no-padding{
+    padding: 0;
 }
