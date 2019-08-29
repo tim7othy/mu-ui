@@ -1,0 +1,40 @@
+/* 底部导航栏 */
+.mu-navbar {
+    position: fixed;
+    bottom: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    height: 2.5rem;
+
+    display: flex;
+    text-align: center;
+
+    z-index: 200;
+    border-top: 1px solid #ddd;
+    background: #f8f8f8
+}
+
+.mu-navbar > .navbar-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: #808080;
+}
+
+.mu-navbar > .navbar-item.active {
+    color: #09BB07;
+}
+
+.mu-navbar > .navbar-item > .name {
+    flex: 0 0 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+}
+
+.mu-navbar > .navbar-item > .icon {
+    flex: 0 0 1.7rem;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}

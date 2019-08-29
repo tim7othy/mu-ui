@@ -1,0 +1,37 @@
+/* 头部导航条 */
+.mu-header {
+    position: fixed;
+    top: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    height: 2.3rem;
+
+    display: flex;
+    line-height: 2.3rem;
+    text-align: center;
+
+    z-index: 200;
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8
+}
+
+/* 导航栏左侧功能按钮 */
+.mu-header > .left {
+    flex: 0 0 3rem;
+}
+
+/* 导航栏右侧功能按钮 */
+.mu-header > .right {
+    flex: 0 0 3rem;
+}
+
+/* 导航栏标题 */
+.mu-header > .title {
+    flex: 1 1 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+}

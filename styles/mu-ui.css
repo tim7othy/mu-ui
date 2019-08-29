@@ -4,3 +4,7 @@
 @import './common.css';
 /* 图标样式 */
 @import './icon.css';
+/* 布局样式 */
+@import './header.css';
+@import './content.css';
+@import './navbar.css';
