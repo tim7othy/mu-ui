@@ -1,0 +1,94 @@
+.mu-list > .mu-list-item {
+    position: relative;
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    background: #fff;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.mu-list .item-img-wrap {
+    flex: 0 0 5rem;
+    height: 5rem;
+    margin-right: .5rem;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+.mu-list .item-img-wrap > .item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.mu-list .item-content-wrap {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 列表项标题字段，最大两行文本 */
+.mu-list .item-content-wrap > .item-title {
+    height: 2rem;
+    line-height: 1rem;
+    font-size: .8rem;
+    font-weight: normal;
+    overflow: hidden;
+    /* 固定搭配，实现多行文本省略 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+/* 列表项的中间价格字段 */
+.mu-list .item-content-wrap > .item-price{
+    font-size: .8rem;
+    font-weight: 600;
+    color: #e0652f;
+}
+/* 列表项的描述字段 */
+.mu-list .item-content-wrap > .item-desc{
+    color: #999;
+    font-size: .6rem;
+}
+
+.mu-list.two-column {
+    /* 让容器内的inline元素之间间距为0 */
+    font-size: 0;
+}
+
+.mu-list.two-column > .mu-list-item {
+    position: relative;
+    box-sizing: border-box;
+    width: 50vw;
+    display: inline-flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    background: #fff;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.mu-list.two-column .item-img-wrap {
+    position: relative;
+    flex: 0 0 5rem;
+    width: 5rem;
+    margin-bottom: .5rem;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+.mu-list.two-column .item-img-wrap > .item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.mu-list.two-column .item-content-wrap {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
